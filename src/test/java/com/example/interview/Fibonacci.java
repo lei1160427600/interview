@@ -10,7 +10,7 @@ import org.junit.Test;
  * @date 2019/6/510:22
  */
 public class Fibonacci {
-    //递归调用
+    // 递归实现
     public int fibonacci(int n){
         if (n == 1 || n == 2) {
             return 1;
@@ -19,6 +19,7 @@ public class Fibonacci {
         }
     }
 
+    // for循环实现
     public int fibonacci1(int n){
         if (n == 1 || n == 2) {
             return 1;
