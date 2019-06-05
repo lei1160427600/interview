@@ -8,7 +8,11 @@ import java.util.Arrays;
  * @author xiaolei
  * @Title: BubbleSort
  * @ProjectName interview
- * @Description: 冒泡排序
+ * @Description: 冒泡排序 平均时间复杂度 O(n2) ，稳定性：稳定
+ * 基本思想：比较相邻的元素，如果前一个比后一个大，就把它们两个调换位置。
+ * 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。
+ * 针对所有的元素重复以上的步骤，除了最后一个。
+ * 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
  * @date 2019/6/322:33
  */
 public class BubbleSort {

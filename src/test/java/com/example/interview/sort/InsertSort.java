@@ -8,7 +8,8 @@ import java.util.Arrays;
  * @author xiaolei
  * @Title: InsertSort
  * @ProjectName interview
- * @Description: 插入排序
+ * @Description: 插入排序 平均时间复杂度 O(n2) 稳定性：稳定
+ * 基本思想：在要排序的一组数中，假定前n-1个数已经排好序，现在将第n个数插到前面的有序数列中，使得这n个数也是排好顺序的。如此反复循环，直到全部排好顺序。
  * @date 2019/6/423:38
  */
 public class InsertSort {
