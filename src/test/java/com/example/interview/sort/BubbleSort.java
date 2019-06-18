@@ -1,6 +1,8 @@
 package com.example.interview.sort;
 
 import org.junit.Test;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
@@ -15,6 +17,8 @@ import java.util.Arrays;
  * 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
  * @date 2019/6/322:33
  */
+@Component("bubblesort")
+@Scope(value = "prototype")
 public class BubbleSort {
 
     public void bubbleSort(int[] array){
