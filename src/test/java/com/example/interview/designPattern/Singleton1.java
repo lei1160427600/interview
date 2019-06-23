@@ -9,6 +9,7 @@ package com.example.interview.designPattern;
  */
 public class Singleton1 {
     private static Singleton1 instance;
+    //当类的构造函数为私有时，只能在本类实例化该类的对象。
     private Singleton1(){
     }
     //线程不安全

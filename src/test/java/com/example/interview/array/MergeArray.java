@@ -44,13 +44,14 @@ public class MergeArray {
 
     @Test
     public void test (){
-        int[] a = {5, 7, 8, 9,};
+        int[] a = {5, 7, 8, 9};
         int[] b = {1, 2, 4, 5};
         System.out.println(Arrays.toString(mergeArray(a, b)));
         String str1="hello";
         String str2 = "he" + new String("llo");
         String str3="he"+"llo";
         System.out.println((str1==str3)+":"+str1.equals(str2));
+        System.out.println((str1==str2)+":"+str1.equals(str2));
 
     }
 }
