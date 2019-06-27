@@ -1,0 +1,13 @@
+spring:
+  #通用数据配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/marksystem?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: 228721
+    driver-class-name: com.mysql.cj.jdbc.Driver
+   #JPA 配置
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
