@@ -35,7 +35,6 @@ public class BubbleSort {
 
     @Test
     public void test(){
-//        int[] array = new int[3];
         int[] array = {2,1,9,4,5,3,0,6,2};
         bubbleSort(array);
         System.out.println(Arrays.toString(array));
