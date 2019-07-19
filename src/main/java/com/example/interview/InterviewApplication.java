@@ -1,6 +1,8 @@
 package com.example.interview;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.interview.dao.UserDao;
+import com.example.interview.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,16 +14,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 //@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example.interview")
 @RestController
 @RequestMapping(value = "/test")
 public class InterviewApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(InterviewApplication.class);
     @Autowired
-    public UserDao userDao;
+    private UserDao userDao;
+    @Autowired
+    private User user;
     @RequestMapping(value="/hello",method = RequestMethod.GET)
     public String sayHello(){
         System.out.println("Hello word");
+        System.out.println(JSONObject.toJSONString(user));
         LOGGER.info("logger...................");
         return "Hello word";
     }
