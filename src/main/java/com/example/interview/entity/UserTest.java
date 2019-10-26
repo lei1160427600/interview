@@ -1,4 +1,4 @@
-package com.example.interview;
+package com.example.interview.entity;
 
 import javax.persistence.*;
 

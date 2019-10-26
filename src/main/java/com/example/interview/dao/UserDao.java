@@ -1,6 +1,6 @@
 package com.example.interview.dao;
 
-import com.example.interview.UserTest;
+import com.example.interview.entity.UserTest;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
