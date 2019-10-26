@@ -264,6 +264,8 @@ $ git revert [commit]
 # 暂时将未提交的变化移除，稍后再移入
 $ git stash
 $ git stash pop
+#查看所有被隐藏的文件列表
+$ git stash list
 
 十、其他
 # 生成一个可供发布的压缩包
