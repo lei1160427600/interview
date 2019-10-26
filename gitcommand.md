@@ -266,6 +266,20 @@ $ git stash
 $ git stash pop
 #查看所有被隐藏的文件列表
 $ git stash list
+#恢复被隐藏的文件，但在git栈中的这个不删除，用法git stash apply stash@{0},如果我们在git stash apply 的时候在工作目录下的文件一部分已经加入了暂存区，部分文件没有，
+#当我们执行git stash apply之后发现所有的文件都变成了未暂存的，如果想维持原来的样子，即暂存过的依旧是暂存状态，那么可以使用 git stash apply --index
+$ git stash apply
+#默认恢复git栈中最新的一个stash@{num}，建议在git栈中只有一条的时候使用，以免混乱
+$ git stash pop
+#删除指定的一个进度，默认删除最新的进度，用法git stash drop stash@{0}
+$ git stash drop
+#删除所有存储的进度
+$ git stash clear
+#显示stash的内容具体是什么，使用方式如git stash show stash@{0}
+$ git stash show
+#查看帮助
+$ git stash --help
+
 
 十、其他
 # 生成一个可供发布的压缩包
