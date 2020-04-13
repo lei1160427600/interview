@@ -279,7 +279,7 @@ $ git stash clear
 $ git stash show
 #查看帮助
 $ git stash --help
-
+ 
 
 十、其他
 # 生成一个可供发布的压缩包
