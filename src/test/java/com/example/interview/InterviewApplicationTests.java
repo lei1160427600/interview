@@ -11,6 +11,7 @@ public class InterviewApplicationTests {
 
     @Test
     public void contextLoads() {
+        com.example.interview.Test.InnorTest1 test = new com.example.interview.Test.InnorTest1();
     }
 
 }

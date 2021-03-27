@@ -4,7 +4,7 @@ package com.example.interview.designPattern;
  * @author xiaolei
  * @Title: Singleton2
  * @ProjectName interview
- * @Description: 懒汉模式
+ * @Description: 饿汉模式
  * @date 2019/6/411:14
  */
 public class Singleton2 {
